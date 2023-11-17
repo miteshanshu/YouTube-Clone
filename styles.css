@@ -1,0 +1,455 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body font */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Adding fallback fonts similar to YouTube */
+    background-color: #202124; /* Closer to YouTube's dark theme background color */
+    color: #ffffff; /* Text color */
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px; /* Adjusted to resemble YouTube's header */
+    padding: 0 24px; /* Adjust padding */
+    background-color: #202124; /* YouTube's dark theme background color */
+    color: #ffffff; /* White text color */
+  }
+  
+  /* Left side of header */
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Header image */
+  .header__left img {
+    width: 100px; /* Adjust size according to YouTube's logo */
+    margin-left: 16px; /* Slight adjustment to spacing */
+  }
+  
+
+
+/* Search bar in header */
+
+.header__search form {
+    border: 1px solid #333;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  /*  existing CSS */
+.header__search form {
+    border: 1px solid #333;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+/* Your existing CSS */
+.header__search form {
+    border: 1px solid #333;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Dark-themed YouTube-inspired search bar */
+  .header__search form {
+    border: 1px solid #606060; /* Darker gray border */
+    border-radius: 20px;
+    height: 40px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Increased darkness of shadow */
+    background-color: #202020; /* Dark background color */
+  }
+  
+  .header__search input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff; /* White text color */
+    background-color: transparent; /* Transparent input background */
+  }
+  
+  .header__search button {
+    background-color: transparent; /* Transparent background */
+    color: #fff;
+    border: 2px solid #fff; /* White border for visibility */
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+  }
+  
+  .header__search button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+  
+  
+  
+  /* Placeholder text style */
+  .header__search input[type="text"]::placeholder {
+    color: #ccc; /* Lighter gray placeholder text */
+    font-style: italic;
+  }
+  
+
+
+
+/* Search input */
+.header__search input {
+    width: 500px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    background-color: #202124; /* Darker background color */
+    color: #fff;
+  }
+  
+  /* Search button */
+  .header__search button {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #202124; /* Matching background color */
+  }
+  
+  /* Apply a dark theme to the main body */
+  body {
+    background-color: #181818; /* Darker background for the entire page */
+  }
+  
+  .mainBody {
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+    background-color: #202124; /* Matching background color */
+    color: #fff; /* Text color */
+  }
+  
+
+
+
+
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 240px; /* Adjust width for YouTube-like sidebar */
+    background-color: #1f1f1f; /* Similar to YouTube's dark theme background color */
+    color: #ffffff; /* Text color */
+    overflow-y: auto; /* Change to auto for scrolling */
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Sidebar categories */
+  .sidebar__categories {
+    width: 100%;
+    margin-top: 16px; /* Adjust top margin */
+  }
+  
+  /* Sidebar category */
+  .sidebar__category {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px; /* Adjust padding */
+  }
+  
+  /* Text in sidebar category */
+  .sidebar__category span {
+    margin-left: 16px; /* Slight adjustment */
+    color: #ffffff;
+    font-weight: 500; /* Slightly lighter weight */
+  }
+  
+  /* Hover effect on sidebar category */
+  .sidebar__category:hover {
+    background: #2a2a2a; /* Similar to YouTube's darker background color on hover */
+    cursor: pointer;
+  }
+  
+  /* Horizontal line */
+  hr {
+    height: 1px;
+    background-color: #3a3a3a; /* Adjust horizontal line color */
+    border: none;
+    margin: 10px 0; /* Adjust margin */
+  }
+  
+ /* Sidebar categories */
+ .sidebar__categories {
+    width: 100%;
+    margin-top: 16px; /* Adjust top margin */
+  }
+  
+  /* Sidebar category */
+  .sidebar__category {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px; /* Adjust padding */
+  }
+  
+  /* Text in sidebar category */
+  .sidebar__category span {
+    margin-left: 16px; /* Slight adjustment */
+    color: #ffffff;
+    font-weight: 500; /* Slightly lighter weight */
+  }
+  
+  /* Hover effect on sidebar category */
+  .sidebar__category:hover {
+    background: #2a2a2a; /* Similar to YouTube's darker background color on hover */
+    cursor: pointer;
+  }
+  
+  /* Horizontal line */
+  hr {
+    height: 1px;
+    background-color: #3a3a3a; /* Adjust horizontal line color */
+    border: none;
+    margin: 10px 0; /* Adjust margin */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* Videos section */
+.videos {
+  background-color: #121212;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+/* Videos container */
+.videos__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Video card */
+.video {
+  width: 310px;
+  margin-bottom: 30px;
+  background-color: #333;
+}
+
+/* Video thumbnail */
+.video__thumbnail {
+  width: 100%;
+  height: 170px;
+}
+
+/* Image in video thumbnail */
+.video__thumbnail img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Author image */
+.author img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Video details */
+.video__details {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* Video title */
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title text */
+.title h3 {
+  color: #fff;
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Links and spans */
+.title a,
+span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Heading */
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 425px) {
+  .header__search {
+    display: none;
+  }
+
+  .header__icons .material-icons {
+    display: none;
+  }
+
+  .header__icons .display-this {
+    display: inline;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__search {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .show-sidebar {
+    display: inline;
+    position: fixed;
+    top: 4.4rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 941px) {
+  .header__search input {
+    width: 300px;
+  }
+}
+
+
+/* Dark theme for videos */
+
+/* Overall background */
+.videos {
+    background-color: #181818; /* Darker background color */
+    color: #fff; /* Light text color */
+    width: 100%;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  
+  /* Video container styles */
+  .videos__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual video card styles */
+  .video {
+    background-color: #222; /* Darker card background color */
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Thumbnail styles */
+  .video__thumbnail {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .video__thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Author styles */
+  .author img {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+  }
+  
+  /* Video details styles */
+  .video__details {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Title styles */
+  .title {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .title h3 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  
+  .title a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .videos__container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
